@@ -9,5 +9,6 @@ public class ShapesOb {
         System.out.println(circle);
         System.out.println(square);
         System.out.println(rectangle);
+
     }
 }
