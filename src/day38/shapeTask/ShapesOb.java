@@ -6,6 +6,8 @@ public class ShapesOb {
         Square square=new Square(5);
         Rectangle rectangle=new Rectangle(4,5);
 
+
+
         System.out.println(circle);
         System.out.println(square);
         System.out.println(rectangle);
