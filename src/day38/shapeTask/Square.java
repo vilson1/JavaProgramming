@@ -33,7 +33,6 @@ public class Square extends Shape{
     @Override
     public String toString() {
         return "Square{" +
-                "name='" + getName() + '\'' +
                 ", side=" + side + '\'' +
                 ", Area=" + area() + '\'' +
                 ", Perimeter=" + perimeter() +

@@ -49,7 +49,6 @@ public class Rectangle extends Shape{
     @Override
     public String toString() {
         return "Rectangle{" +
-                "name='" + getName() +
                 ", length=" + length +'\'' +
                 ", width=" + width +'\'' +
                 ", Area='" + area() + '\'' +
