@@ -1,32 +1,44 @@
 package day38.shapeTask;
 
 public class Circle extends Shape{
-    public int radius;
+    private int radius;
     public static double PI=3.14;
+
+    public int getRadius() {
+        return radius;
+    }
+
+    public void setRadius(int radius) {
+        if (radius<=0){
+            System.err.println("Invalid radius");
+            System.exit(1);
+        }
+        this.radius = radius;
+    }
 
     public Circle(int radius) {
         super("Circle");
-        this.radius=radius;
+        setRadius(radius);
     }
 
     @Override
     public double area() {
-        double area=PI*radius*radius;
-        return area;
+        return PI*radius*radius;
+
 
     }
 
     @Override
     public double perimeter() {
-        double perimeter=2*radius*PI;
-        return perimeter;
+        return 2*radius*PI;
+
     }
 
     @Override
     public String toString() {
         return "Circle{" +
                 "radius=" + radius + '\'' +
-                ", name='" + name + '\'' +
+                ", name='" + getName() + '\'' +
                 ", PI='" + PI + '\'' +
                 ", Area ='" + area() + '\'' +
                 ", Perimeter ='" + perimeter() +

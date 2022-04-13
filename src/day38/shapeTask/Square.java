@@ -1,27 +1,39 @@
 package day38.shapeTask;
 
 public class Square extends Shape{
-    public int side;
+    private int side;
+
+    public int getSide() {
+        return side;
+    }
+
+    public void setSide(int side) {
+        if (side<=0){
+            System.err.println("Invalid side");
+            System.exit(1);
+        }
+        this.side = side;
+    }
+
     public Square(int side) {
         super("Square");
-        this.side=side;
+        setSide(side);
     }
 
     @Override
     public double area() {
-        double area=side*side;
-        return area;
+        return side*side;
     }
 
     public double perimeter(){
-        double perimeter=4*side;
-        return perimeter;
+        return 4*side;
+
     }
 
     @Override
     public String toString() {
         return "Square{" +
-                "name='" + name + '\'' +
+                "name='" + getName() + '\'' +
                 ", side=" + side + '\'' +
                 ", Area=" + area() + '\'' +
                 ", Perimeter=" + perimeter() +
