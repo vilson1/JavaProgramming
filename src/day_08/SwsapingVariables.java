@@ -1,4 +1,4 @@
-package Day_08;
+package day_08;
 
 public class SwsapingVariables {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Day_08;
+package day_08;
 import  java.util.Scanner;
 public class MedianNumber {
     public static void main(String[] args) {
